@@ -1,0 +1,94 @@
+#menu {
+	position: static;
+	margin: 0;
+	padding: 0;
+	width: 250px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#menu > h1 {
+	background: var(--color-base);
+	padding: 16px;
+	border-radius: 20px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+#menu > form > #dbs {
+	background: var(--color-base);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding: 16px 16px 8px 16px;
+	border-width: 0;
+}
+
+#menu > form > #dbs,
+#menu > form > #dbs > span {
+	font-size: 0px;
+}
+
+#menu select {
+	width: 100%;
+}
+
+#menu > #tables {
+	padding: 16px;
+	background: var(--color-base);
+	border-radius: 20px;
+	flex: 1;
+}
+
+#menu > #tables > ul {
+	margin: 0;
+	padding: 0;
+}
+
+#menu > #tables .table-item {
+	list-style-type: none;
+	display: flex;
+	justify-content: start;
+	gap: 8px;
+	margin: 8px 0;
+}
+
+#menu > #tables .table-item > a.table-name {
+	flex: 1;
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* Link */
+
+#menu > .links {
+	background: var(--color-base);
+	padding: 8px 16px 16px 16px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+#menu > .links > a {
+	margin: 0;
+	font-size: 0;
+}
+
+#menu > #logins {
+	background: var(--color-base);
+	padding: 16px;
+	border-radius: 20px;
+	min-height: 300px;
+	width: 100%;
+}
+
+#filter-field {
+	width: 100%;
+	margin-bottom: 8px;
+}

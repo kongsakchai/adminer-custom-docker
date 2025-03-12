@@ -1,0 +1,54 @@
+@import '/assets/fonts.css';
+@import '/assets/menu.css';
+@import '/assets/icon.css';
+@import '/assets/table.css';
+@import '/assets/header.css';
+@import '/assets/input.css';
+@import '/assets/content.css';
+
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--color-primary: #ea76cb;
+	--color-secondary: #8839ef;
+	--color-background: #ea76cb;
+	--color-base: #ffffff;
+	--color-select: #8839ef;
+
+	--color-red: #d20f39;
+	--color-green: #40a02b;
+	--color-blue: #1e66f5;
+}
+
+body {
+	min-width: 1280px;
+	min-height: 720px;
+	margin: 0;
+	padding: 16px;
+	font-size: 12px;
+
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: start;
+	align-items: start;
+	gap: 16px;
+
+	background: color-mix(in srgb, var(--color-background), var(--color-base) 85%);
+}
+
+* {
+	font-family: 'Mali', sans-serif;
+	box-sizing: border-box;
+}
+
+form:has(> #lang) {
+	display: none;
+	/* position: absolute; */
+}
+
+form:has(> .logout) {
+	display: none;
+}

@@ -1,0 +1,71 @@
+table {
+	text-indent: 0;
+	border-collapse: separate;
+	margin: 16px 0;
+	text-wrap: nowrap;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+thead th,
+thead td {
+	text-align: left;
+	background: color-mix(in srgb, var(--color-primary), var(--color-base) 85%);
+	border: none;
+	padding: 8px;
+	color: var(--color-primary);
+	font-weight: 700;
+}
+
+.js .checkable thead .checked td,
+.js .checkable thead .checked th {
+	background: color-mix(in srgb, var(--color-primary), var(--color-base) 85%);
+}
+
+tbody th,
+tbody td {
+	border: none;
+	background: var(--color-base);
+	padding: 8px;
+}
+
+tbody th.checked,
+tbody td.checked {
+	background: color-mix(in srgb, var(--color-selected), var(--color-base) 80%);
+}
+
+tbody tr:nth-child(even) th,
+tbody tr:nth-child(even) td {
+	background: color-mix(in srgb, var(--color-primary), var(--color-base) 90%);
+}
+
+tbody tr:hover th,
+tbody tr:hover td {
+	background: color-mix(in srgb, var(--color-primary), var(--color-base) 80%);
+}
+
+tbody tr td:not(:first-child) a[href*='='] {
+	background-image: none;
+	font-size: 10px;
+	width: auto;
+	height: auto;
+}
+
+#login-form table th,
+#login-form table td {
+	background: var(--color-base);
+}
+
+#login-form > section {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+#login-form > section > p {
+	margin: 0;
+}
+
+#login-form > section input[type='submit'] {
+	background: color-mix(in srgb, var(--color-primary), var(--color-base) 85%);
+}

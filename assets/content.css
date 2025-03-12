@@ -1,0 +1,134 @@
+#content {
+	background: var(--color-base);
+	border-radius: 20px;
+
+	padding: 16px;
+	margin: 0;
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+#content > #breadcrumb {
+	position: static;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
+#content > .links {
+	margin: 16px 0;
+	padding: 0;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+#content > p {
+	margin: 8px 0;
+}
+
+#content > p,
+#content > p span {
+	background: var(--color-base);
+}
+
+#content > #form {
+	padding: 0;
+	margin: 0;
+}
+
+#content form > p:has(select[name='collation']) {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+#content fieldset {
+	margin: 8px 16px 8px 0;
+	padding: 0;
+	border: none;
+}
+
+#content fieldset > div {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+#content fieldset > div > div {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+}
+
+#content .footer {
+	position: static;
+	margin: 0;
+	padding: 0;
+	background: var(--color-base);
+}
+
+#content .footer > div {
+	display: flex;
+	gap: 16px;
+}
+
+#content .footer fieldset > div {
+	flex-direction: column;
+}
+
+#content .footer fieldset > div > p:has(select[name='target']) {
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+}
+
+#content fieldset > legend {
+	margin-bottom: 8px;
+}
+
+#content form a[href='#import'] {
+	display: none;
+}
+
+#import {
+	display: flex;
+	margin-top: 8px;
+	gap: 16px;
+	align-items: center;
+}
+
+#import::before {
+	content: 'Import';
+}
+
+a,
+a:visited {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+b {
+	color: var(--color-secondary);
+}
+
+legend {
+	color: var(--color-secondary);
+}
+
+#help,
+#help * {
+	border-radius: 8px;
+	opacity: 0.9;
+	color: var(--color-secondary);
+	border: none;
+}
+
+code,
+code * {
+	font-family: 'Geist', monospace;
+	background: transparent;
+}
